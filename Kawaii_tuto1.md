@@ -299,7 +299,7 @@ python tracker_v1.6.py --domain example.com --user YOUR_USER --password YOUR_PAS
 
 ### 注意
 
-- **Windows**: コマンドプロンプトやPowerShellでは、行末の `\` が使えません。コマンドは1行で書いてください。
+- **Windows**: 行末の `\` では改行できません。このガイドのコマンドは1行で書いてあるので、そのまま貼れます。複数行に分けたい場合は、コマンドプロンプトでは行末に `^`、PowerShellでは行末にバッククォート `` ` `` を使います。
 - **パスワード**: v1.6は環境変数に対応していません。コマンドラインに直接書くと、シェルの履歴に残る点に注意してください。
 
 ---
@@ -318,7 +318,7 @@ python tracker_v1.6.py --domain example.com --user YOUR_USER --password YOUR_PAS
 🌫️  [低関連度: 13点] クラスター #1: example.com, img.example.com
 ```
 
-低関連度のクラスターは、**画面には1行しか出ません**。理由は `report.json` を開いて確認します。
+低関連度のクラスターは、**ターミナルにはスコアとドメイン名の1行しか表示されません**。詳細な理由は `report.json` に保存されるので、そちらを開いて確認します(高関連度のクラスターだけ、理由もターミナルに出ます)。
 
 ```json
 "reasons": [
